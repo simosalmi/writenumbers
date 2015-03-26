@@ -1,0 +1,26 @@
+﻿
+@{    
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<div class="row">
+    <div class="well col-lg-6 col-lg-push-3">
+        <h1>@Resources.Numbers.IntroMessage</h1>
+    </div>
+</div>
+<div class="row" data-ng-controller="numbersController">
+    <div class="well col-lg-6 col-lg-push-3">
+        <form role="form" name="writeNumberForm" class="form-horizontal" novalidate data-ng-submit="sendNumber()">
+            <fieldset>
+                <div class="form-group">
+                    <input type="text" class="form-control input-xl" id="inputNumber" name="inputNumber" placeholder="Type Here" required data-ng-model="numberToWrite.value">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" id="writeNumberButton">Write It</button>
+                </div>
+                <div class="fixed-height-60" data-ss-alert></div>                
+            </fieldset>
+        </form>
+    </div>    
+</div>
+

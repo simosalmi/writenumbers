@@ -1,0 +1,11 @@
+﻿<div class="alert alert-{{alert.level}} alert-dismissible"
+     role="alert"
+     data-ng-show="alert.visible">
+    <button type="button"
+            class="close"
+            data-ng-click="alert.hide()">
+        <span aria-hidden="true">&times;</span>
+        <span class="sr-only">Close</span>
+    </button>
+    <h2 data-ng-bind="alert.title"></h2><h1>{{alert.message}}</h1>
+</div>
