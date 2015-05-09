@@ -81,7 +81,7 @@ namespace NumbersApi.Models
             }
             catch(ArgumentNullException ex)
             {
-                throw new ArgumentNullException("Value", ResourceManager.GetString("ArgumentNullErrorMessage", Culture));
+                throw new ArgumentNullException(ResourceManager.GetString("ArgumentNullErrorMessage", Culture), ex);
             }
 
 

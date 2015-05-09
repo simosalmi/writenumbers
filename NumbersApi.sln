@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersApi", "NumbersApi\NumbersApi.csproj", "{6B20B049-D6CC-4D8E-9B35-CAA4BCAAED0D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersApi.Tests", "NumbersApi.Tests\NumbersApi.Tests.csproj", "{B3DB1976-1729-4A69-9D65-E779A057CC6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{AD992269-2AF3-4760-965C-BA970530268F}"
+	ProjectSection(SolutionItems) = preProject
+		NumbersApi\App_Start\BundleConfig.cs = NumbersApi\App_Start\BundleConfig.cs
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

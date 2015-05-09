@@ -12,15 +12,10 @@ namespace NumbersApi.Models
         public static List<String> SplitToList(string value, string separator)
         {
             List<String> result = new List<String>();
-            try
-            {
-                String[] values = value.Split(separator.ToCharArray());
-                result = values.ToList<String>();
-            }
-            catch(Exception ex)
-            {
-
-            }            
+            
+            String[] values = value.Split(separator.ToCharArray());
+            result = values.ToList<String>();
+                    
             return result;
         }        
     }
